@@ -1,0 +1,38 @@
+export DOTFILES=$HOME/dotfiles
+
+source $HOME/antigen.zsh
+
+antigen init $HOME/.antigenrc
+
+zmodload zsh/zprof
+
+# display how long all tasks over 10 seconds take
+export REPORTTIME=10
+
+if [[ -a ~/.localrc ]]; then
+    source ~/.localrc
+fi
+
+# initialize autocomplete
+autoload -U compinit && compinit
+
+export EDITOR='nvim'
+
+# adding path directory for custom scripts
+export PATH=$DOTFILES/bin:$PATH
+
+export LC_TYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+export PATH=/opt/homebrew/bin:$PATH
+
+# bun completions
+[ -s "/Users/batuhanergun/.bun/_bun" ] && source "/Users/batuhanergun/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/batuhanergun/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
