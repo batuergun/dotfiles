@@ -1,34 +1,30 @@
-# -- Changing Window Focus --
-# change window focus within space 
+# change window focus within space
 alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - h : yabai -m window --focus west
 alt - l : yabai -m window --focus east
 
-# increase window size
-shift + ctrl - j : yabai -m window --resize bottom:0:20
-shift + ctrl - k : yabai -m window --resize top:0:-20
-shift + ctrl - h : yabai -m window --resize left:-20:0
-shift + ctrl - l : yabai -m window --resize right:20:0
+# toggle split
+alt - e : yabai -m window --toggle split
 
 #change focus between external displays (left and right)
 alt - s: yabai -m display --focus west
 alt - g: yabai -m display --focus east
 
-# -- Modifying the Layout --
-
 # toggle window float
 ctrl + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
-
-# -- Modifying Window Size --
 
 # maximize a window
 alt - f : yabai -m window --toggle zoom-fullscreen
 
+# increase window size
+ctrl + shift - h : yabai -m window west --resize right:-64:0 2> /dev/null || yabai -m window --resize right:-40:0
+ctrl + shift - j : yabai -m window north --resize bottom:0:64 2> /dev/null || yabai -m window --resize bottom:0:40
+ctrl + shift - k : yabai -m window south --resize top:0:-64 2> /dev/null || yabai -m window --resize top:0:-40
+ctrl + shift - l : yabai -m window east --resize left:64:0 2> /dev/null || yabai -m window --resize left:40:0
+
 # balance out tree of windows (resize to occupy same area)
 shift + alt - e : yabai -m space --balance
-
-# -- Moving Windows Around --
 
 # swap windows
 shift + alt - j : yabai -m window --swap south
