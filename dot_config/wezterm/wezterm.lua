@@ -76,6 +76,11 @@ return {
       mods = "LEADER|CTRL",
       action = wezterm.action.SendString("\x01"),
     },
+    {
+      key = 'I',
+      mods = 'CMD',
+      action = wezterm.action.ClearScrollback 'ScrollbackAndViewport',
+    },
   },
   color_scheme = "bleeding-purple",
 }
