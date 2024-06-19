@@ -3,7 +3,7 @@ local wezterm = require("wezterm")
 return {
   audible_bell = "Disabled",
   front_end = "WebGpu",
-  term = "wezterm",
+  term = "xterm-256color",
   use_fancy_tab_bar = false,
   tab_bar_at_bottom = true,
   show_tab_index_in_tab_bar = true,
@@ -24,7 +24,7 @@ return {
     -- "Martian Mono Nr Lt",
     "JetBrainsMono Nerd Font",
   }),
-  font_size = 20,
+  font_size = 14,
   -- line_height = 1.10,
   harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
   leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 },
