@@ -42,3 +42,6 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 # llm nvim
 export ANTHROPIC_API_KEY=
+
+# llvm
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
