@@ -46,3 +46,6 @@ export ANTHROPIC_API_KEY=
 # llvm
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export CPLUS_INCLUDE_PATH=/opt/homebrew/opt/llvm/include:$CPLUS_INCLUDE_PATH
+
+# emsdk
+export PATH="/Users/batuhanergun/Developer/emsdk:$PATH"
