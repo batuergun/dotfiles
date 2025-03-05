@@ -7,6 +7,9 @@ cmd - l : yabai -m window --focus east
 # toggle split
 cmd - e : yabai -m window --toggle split
 
+# passthrough for Shortcat
+cmd - r : skhd -k "cmd - r"
+
 #change focus between external displays (left and right)
 cmd - s: yabai -m display --focus west
 cmd - g: yabai -m display --focus east
