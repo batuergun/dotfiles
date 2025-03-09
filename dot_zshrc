@@ -49,3 +49,6 @@ export CPLUS_INCLUDE_PATH=/opt/homebrew/opt/llvm/include:$CPLUS_INCLUDE_PATH
 
 # emsdk
 export PATH="/Users/batuhanergun/Developer/emsdk/upstream/emscripten:$PATH"
+
+# local/bin
+export PATH="$HOME/.local/bin/env:$PATH"
