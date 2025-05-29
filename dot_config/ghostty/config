@@ -1,0 +1,32 @@
+# Ghostty Configuration
+
+# Font settings
+font-family = JetBrainsMono Nerd Font
+font-size = 14
+
+# Terminal behavior
+term = xterm-256color
+shell-integration = zsh
+
+# Make Option key work as Meta/Alt key (for tmux Option+a prefix)
+macos-option-as-alt = true
+
+# don't ask when closing
+confirm-close-surface = false
+
+# Theme and colors
+# theme = jubi
+background-opacity = 1.0
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = false
+
+# Scrollback
+scrollback-limit = 10000
+
+# Mouse
+mouse-hide-while-typing = true
+
+# Performance
+unfocused-split-opacity = 0.9
