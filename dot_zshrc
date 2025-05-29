@@ -52,3 +52,9 @@ export PATH="/Users/batuhanergun/Developer/emsdk/upstream/emscripten:$PATH"
 
 # local/bin
 export PATH="$HOME/.local/bin/env:$PATH"
+
+# tmux aliases
+alias t='tmux'
+alias ta='tmux attach -t'
+alias tls='tmux list-sessions'
+alias tn='tmux new-session -s'

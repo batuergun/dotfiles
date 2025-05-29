@@ -27,6 +27,10 @@ return {
   font_size = 14,
   -- line_height = 1.10,
   harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
+  
+  -- Make Option key work as Meta key (for tmux Option+a prefix)
+  send_composed_key_when_right_alt_is_pressed = false,
+  
   leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 },
   keys = {
     {
