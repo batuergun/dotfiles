@@ -57,3 +57,16 @@ skhd --start-service
 | cmd + t | New window |
 | cmd + w | Close pane |
 | cmd + 1-9 | Switch to window |
+
+### Git aliases
+
+| Alias | Command |
+|-------|---------|
+| `git st` | `status -sb` |
+| `git ci` | `commit` |
+| `git co` | `checkout` |
+| `git di` | `diff` |
+| `git lg` | `log -p` |
+| `git lol` | `log --graph --decorate --pretty=oneline --abbrev-commit` |
+| `git unstage` | `reset HEAD --` |
+| `git discard` | `checkout --` |
