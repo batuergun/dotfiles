@@ -49,3 +49,11 @@ skhd --start-service
 | prefix + HJKL | Resize panes |
 | prefix + c | New window |
 | prefix + r | Reload config |
+
+### Ghostty (mapped to tmux)
+
+| Key | Action |
+|-----|--------|
+| cmd + t | New window |
+| cmd + w | Close pane |
+| cmd + 1-9 | Switch to window |
