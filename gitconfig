@@ -1,0 +1,35 @@
+[user]
+    name = Batu Ergun
+    email = ergunbatuhan@icloud.com
+
+[init]
+    defaultBranch = main
+
+[alias]
+    st = status -sb
+    ci = commit
+    co = checkout
+    di = diff
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    unstage = reset HEAD --
+    discard = checkout --
+
+[core]
+    editor = nvim
+    quotepath = false
+
+[credential]
+    helper = osxkeychain
+
+[push]
+    default = current
+
+[pull]
+    rebase = false
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+
+[color]
+    ui = auto
