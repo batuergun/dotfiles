@@ -39,7 +39,7 @@ skhd --start-service
 | shift + alt + 1-7 | Move to space |
 | shift + alt + p/n | Move to prev/next space |
 
-### tmux (prefix: ctrl+a)
+### tmux (prefix: ctrl+f)
 
 | Key | Action |
 |-----|--------|
