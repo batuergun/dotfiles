@@ -58,6 +58,13 @@ skhd --start-service
 | cmd + w | Close pane |
 | cmd + 1-9 | Switch to window |
 
+### Fish functions
+
+| Command | Action |
+|---------|--------|
+| `wm-stop` | Stop yabai + skhd (e.g. for Logic Pro) |
+| `wm-start` | Start yabai + skhd and reload yabairc |
+
 ### Git aliases
 
 | Alias | Command |
