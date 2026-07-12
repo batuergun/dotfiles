@@ -5,9 +5,8 @@ eval "$(/opt/homebrew/bin/brew shellenv fish)"
 fish_add_path $HOME/go/bin
 fish_add_path $HOME/.local/bin
 
-# Land interactive SSH logins in a persistent tmux session so long-running
-# work (Claude Code) outlives client disconnects. exec so quitting tmux ends
-# the SSH session cleanly; skip when already inside tmux to avoid nesting.
+# Attach interactive SSH logins to a persistent tmux so work outlives
+# disconnects. exec so quitting tmux ends the session; skip if already in tmux.
 if status is-interactive; and set -q SSH_CONNECTION; and not set -q TMUX
     exec tmux new -A -s main
 end
