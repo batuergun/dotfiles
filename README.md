@@ -58,6 +58,14 @@ skhd --start-service
 | cmd + w | Close pane |
 | cmd + 1-9 | Switch to window |
 
+### cmux
+
+| Key | Action |
+|-----|--------|
+| cmd + 1-9 | Switch tab (surface) |
+| ctrl + 1-9 | Switch workspace |
+| cmd + ctrl + hjkl | Focus pane (cmd + hjkl stays yabai window focus) |
+
 ### Fish functions
 
 | Command | Action |
