@@ -23,6 +23,13 @@ cmd - l [
 # Toggle split
 cmd - e : yabai -m window --toggle split
 
+# Shortcat passthrough
+cmd - r : skhd -k "cmd - r"
+
+# Display focus
+cmd - s : yabai -m display --focus west
+cmd - g : yabai -m display --focus east
+
 # Float toggle
 cmd + shift - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
@@ -65,6 +72,10 @@ ctrl + alt - j : yabai -m window --warp south
 ctrl + alt - k : yabai -m window --warp north
 ctrl + alt - h : yabai -m window --warp west
 ctrl + alt - l : yabai -m window --warp east
+
+# Move to display
+cmd + shift - s : yabai -m window --display west; yabai -m display --focus west;
+cmd + shift - g : yabai -m window --display east; yabai -m display --focus east;
 
 # Move to space
 shift + alt - p : yabai -m window --space prev;
