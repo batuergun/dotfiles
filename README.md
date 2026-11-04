@@ -27,7 +27,7 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.batuhanergun.screens
 
 ## Screenshot sync
 
-Screenshots save to `/Users/Shared/Screenshots`. A launch agent (`screenshots/sync.sh`, fswatch + rsync over SSH to `b2t`) mirrors that folder to the same path on b2, so a screenshot dropped into a b2 Rex session pastes a path that exists there. Log: `/tmp/screenshot-sync.log`.
+Screenshots save to `/Users/Shared/Screenshots`. A launch agent (`screenshots/sync.sh`, fswatch + rsync over SSH to `b2t`) mirrors that folder to the same path on b2, so a screenshot dropped into a b2 Rex session pastes a path that exists there. The folder is mode 700 on both sides, and the script refuses to sync unless each side is a real directory owned by the syncing user. Log: `~/Library/Logs/screenshot-sync.log`.
 
 ## Shortcuts
 

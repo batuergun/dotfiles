@@ -12,7 +12,7 @@ sync:
 	mkdir -p ~/.config/fish
 	mkdir -p ~/.config/ghostty
 	mkdir -p ~/.config/rex
-	mkdir -p /Users/Shared/Screenshots
+	install -d -m 700 /Users/Shared/Screenshots
 
 	$(call link,config.fish,~/.config/fish/config.fish)
 	$(call link,fish/functions,~/.config/fish/functions)
