@@ -20,7 +20,14 @@ chsh -s /opt/homebrew/bin/fish
 # start window management services
 yabai --start-service
 skhd --start-service
+
+# start screenshot sync to b2
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.batuhanergun.screenshot-sync.plist
 ```
+
+## Screenshot sync
+
+Screenshots save to `/Users/Shared/Screenshots`. A launch agent (`screenshots/sync.sh`, fswatch + rsync over SSH to `b2t`) mirrors that folder to the same path on b2, so a screenshot dropped into a b2 Rex session pastes a path that exists there. Log: `/tmp/screenshot-sync.log`.
 
 ## Shortcuts
 
