@@ -1,17 +1,21 @@
 # Window focus
 cmd - j [
+  "rex beta" ~
   "rex" ~
   * : yabai -m window --focus south
 ]
 cmd - k [
+  "rex beta" ~
   "rex" ~
   * : yabai -m window --focus north
 ]
 cmd - h [
+  "rex beta" ~
   "rex" ~
   * : yabai -m window --focus west
 ]
 cmd - l [
+  "rex beta" ~
   "rex" ~
   * : yabai -m window --focus east
 ]
@@ -36,18 +40,22 @@ shift + alt - e : yabai -m space --balance
 
 # Swap
 cmd + shift - j [
+  "rex beta" ~
   "rex" ~
   * : yabai -m window --swap south
 ]
 cmd + shift - k [
+  "rex beta" ~
   "rex" ~
   * : yabai -m window --swap north
 ]
 cmd + shift - h [
+  "rex beta" ~
   "rex" ~
   * : yabai -m window --swap west
 ]
 cmd + shift - l [
+  "rex beta" ~
   "rex" ~
   * : yabai -m window --swap east
 ]
