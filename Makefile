@@ -12,6 +12,7 @@ sync:
 	mkdir -p ~/.config/fish
 	mkdir -p ~/.config/ghostty
 	mkdir -p ~/.config/rex
+	install -d -m 700 /Users/Shared/Screenshots
 
 	$(call link,config.fish,~/.config/fish/config.fish)
 	$(call link,fish/functions,~/.config/fish/functions)
@@ -21,6 +22,9 @@ sync:
 	$(call link,tmux.conf,~/.tmux.conf)
 	$(call link,skhdrc,~/.skhdrc)
 	$(call link,yabairc,~/.yabairc)
+	$(call link,screenshots/com.batuhanergun.screenshot-sync.plist,~/Library/LaunchAgents/com.batuhanergun.screenshot-sync.plist)
+	defaults write com.apple.screencapture location /Users/Shared/Screenshots
+	defaults write com.apple.screencapture location-screenshot /Users/Shared/Screenshots
 	touch ~/.hushlogin
 
 clean:
@@ -32,4 +36,5 @@ clean:
 	rm -f ~/.tmux.conf
 	rm -f ~/.skhdrc
 	rm -f ~/.yabairc
+	rm -f ~/Library/LaunchAgents/com.batuhanergun.screenshot-sync.plist
 	rm -f ~/.hushlogin
