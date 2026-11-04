@@ -28,8 +28,11 @@ skhd --start-service
 
 | Key | Action |
 |-----|--------|
-| cmd + hjkl | Focus window |
-| cmd + shift + hjkl | Swap window |
+| cmd + hjkl | Focus window (in Rex: focus split, then window at the edge) |
+| cmd + shift + hjkl | Swap window (in Rex: move split, then swap window at the edge) |
+| cmd + s/g | Focus display left/right |
+| cmd + shift + s/g | Move window to display left/right |
+| cmd + r | Shortcat passthrough |
 | cmd + e | Toggle split |
 | alt + f | Fullscreen |
 | cmd + shift + t | Toggle float |
@@ -38,6 +41,22 @@ skhd --start-service
 | shift + alt + e | Balance |
 | shift + alt + 1-7 | Move to space |
 | shift + alt + p/n | Move to prev/next space |
+
+### Rex
+
+Rex defaults, plus `rex.lua`:
+
+| Key | Action |
+|-----|--------|
+| cmd + d / cmd + shift + d | Split right / down |
+| cmd + hjkl | Focus split |
+| cmd + shift + hjkl | Move split |
+| cmd + t / cmd + w | New tab / close pane |
+| cmd + 1-9 | Switch to tab |
+| ctrl + cmd + [ / ] | Move tab left / right |
+| ctrl + cmd + r | Rename tab |
+| cmd + p | Session picker |
+| cmd + shift + p | Command palette |
 
 ### tmux (prefix: ctrl+f)
 

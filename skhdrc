@@ -1,11 +1,34 @@
 # Window focus
-cmd - j : yabai -m window --focus south
-cmd - k : yabai -m window --focus north
-cmd - h : yabai -m window --focus west
-cmd - l : yabai -m window --focus east
+cmd - j [
+  "rex beta" ~
+  "rex" ~
+  * : yabai -m window --focus south
+]
+cmd - k [
+  "rex beta" ~
+  "rex" ~
+  * : yabai -m window --focus north
+]
+cmd - h [
+  "rex beta" ~
+  "rex" ~
+  * : yabai -m window --focus west
+]
+cmd - l [
+  "rex beta" ~
+  "rex" ~
+  * : yabai -m window --focus east
+]
 
 # Toggle split
 cmd - e : yabai -m window --toggle split
+
+# Shortcat passthrough
+cmd - r : skhd -k "cmd - r"
+
+# Display focus
+cmd - s : yabai -m display --focus west
+cmd - g : yabai -m display --focus east
 
 # Float toggle
 cmd + shift - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
@@ -23,16 +46,36 @@ ctrl + shift - l : yabai -m window east --resize left:64:0 2> /dev/null || yabai
 shift + alt - e : yabai -m space --balance
 
 # Swap
-cmd + shift - j : yabai -m window --swap south
-cmd + shift - k : yabai -m window --swap north
-cmd + shift - h : yabai -m window --swap west
-cmd + shift - l : yabai -m window --swap east
+cmd + shift - j [
+  "rex beta" ~
+  "rex" ~
+  * : yabai -m window --swap south
+]
+cmd + shift - k [
+  "rex beta" ~
+  "rex" ~
+  * : yabai -m window --swap north
+]
+cmd + shift - h [
+  "rex beta" ~
+  "rex" ~
+  * : yabai -m window --swap west
+]
+cmd + shift - l [
+  "rex beta" ~
+  "rex" ~
+  * : yabai -m window --swap east
+]
 
 # Warp
 ctrl + alt - j : yabai -m window --warp south
 ctrl + alt - k : yabai -m window --warp north
 ctrl + alt - h : yabai -m window --warp west
 ctrl + alt - l : yabai -m window --warp east
+
+# Move to display
+cmd + shift - s : yabai -m window --display west; yabai -m display --focus west;
+cmd + shift - g : yabai -m window --display east; yabai -m display --focus east;
 
 # Move to space
 shift + alt - p : yabai -m window --space prev;
